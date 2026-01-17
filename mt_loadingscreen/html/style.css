@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+#webgl {
+    position:absolute;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+
+#ui-overlay {
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    pointer-events:none;
+    z-index:1;
+}
+
+#logo-container {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+#logo {
+    width:200px;
+    filter:drop-shadow(0 0 15px #ff7f00) drop-shadow(0 0 30px #ffa500);
+}
+
+#progress-container {
+    position:absolute;
+    bottom:60px;
+    left:50%;
+    transform:translateX(-50%);
+    width:60%;
+    height:30px;
+    background:rgba(255,165,0,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow: 0 0 20px #ff7f00, 0 0 40px #ffa500;
+}
+
+#progress-bar {
+    width:0%;
+    height:100%;
+    background:linear-gradient(90deg, #ff7f00, #ffa500);
+    border-radius:15px;
+    box-shadow:0 0 10px orange;
+    transition:width 0.2s ease;
+}
+
+#progress-text {
+    position:absolute;
+    top:-30px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#ff7f00;
+    font-size:22px;
+    font-weight:bold;
+    text-shadow: 0 0 10px orange, 0 0 20px #ffa500;
+}
+
+#player-count {
+    position:absolute;
+    top:20px;
+    right:25px;
+    color:#ff7f00;
+    font-size:22px;
+    font-weight:bold;
+    text-shadow: 0 0 10px #ff7f00, 0 0 20px #ffa500;
+}

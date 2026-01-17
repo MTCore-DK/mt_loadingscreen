@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate WebGL Loadingscreen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="webgl"></canvas>
+
+    <div id="ui-overlay">
+        <div id="logo-container">
+            <img id="logo" src="https://tos.mtcore.dk/logo.png" alt="Logo">
+        </div>
+
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="progress-text">0% Loaded</div>
+        </div>
+
+        <div id="player-count">
+            <span id="current-players">0</span>/<span id="max-players">64</span>
+        </div>
+    </div>
+
+    <audio id="music" src="music.mp3" autoplay loop></audio>
+
+    <script src="three.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
