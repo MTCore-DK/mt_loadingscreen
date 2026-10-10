@@ -1,6 +1,6 @@
 // Server info
 const Config = {
-    serverIP: '123.456.78.90',
+    serverIP: '127.0.0.1',
     serverPort: '30120',
     maxPlayers: 64
 };
